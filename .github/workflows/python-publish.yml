@@ -40,5 +40,5 @@ jobs:
     - name: Build package
       if: github.ref == 'refs/heads/main'
       run: |
-        try poetry config pypi-token.pypi ${{ secrets.PIP_TOKEN }}
-        try poetry publish --build
+        poetry config pypi-token.pypi ${{ secrets.PIP_TOKEN }}
+        poetry publish --build
