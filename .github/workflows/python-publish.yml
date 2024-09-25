@@ -39,4 +39,4 @@ jobs:
           poetry run python -m unittest .\tests\main_test.py
     - name: Build package
       if: github.ref == 'refs/heads/main'
-      run: poetry publish --build --username eefzdsd --password fezdzdezfezf
+      run: poetry publish --build --username "GrosBelix" --password ${{ secrets.PIP_TOKEN }}
